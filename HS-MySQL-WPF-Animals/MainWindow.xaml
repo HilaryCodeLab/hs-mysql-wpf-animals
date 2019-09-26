@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Menu DockPanel.Dock="Top"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Width="793">
+
+            <MenuItem x:Name="FileMenu"
+                      Header="File">
+                <MenuItem x:Name="Exit"
+                          Header="Exit"/>
+            </MenuItem>
+
+            <MenuItem x:Name="Animals"
+                      Header="Animals"/>
+            <MenuItem x:Name="Users"
+                      Header="Users"/>
+            <MenuItem x:Name="Locations"
+                      Header="Locations"/>
+            <MenuItem x:Name="Help"
+                      Header="Help">
+                <MenuItem x:Name="About"
+                          Header="About"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem></StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>
